@@ -1,9 +1,10 @@
 import { Link, useLocation } from "wouter";
 import { useState, useEffect } from "react";
-import { Menu, X, Box } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import Logo from "./Logo";
 
 export default function Navbar() {
   const [location] = useLocation();
@@ -36,12 +37,12 @@ export default function Navbar() {
       <div className="container-padding flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="bg-primary text-primary-foreground p-2 rounded-sm group-hover:bg-accent transition-colors duration-300">
-            <Box className="w-6 h-6" strokeWidth={2.5} />
+          <div className="bg-primary text-primary-foreground p-1.5 rounded-sm group-hover:bg-accent transition-colors duration-300">
+            <Logo className="w-7 h-7" />
           </div>
           <span className={cn(
             "font-heading font-bold text-2xl tracking-tighter",
-            scrolled ? "text-foreground" : "text-foreground" // Ensure visible on light bg
+            scrolled ? "text-foreground" : "text-white"
           )}>
             NAV
           </span>

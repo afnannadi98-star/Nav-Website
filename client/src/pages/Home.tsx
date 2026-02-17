@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Layers, Box, Scan, FileText } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import profilePic from "@assets/1_1771355152045.jpg";
 
 export default function Home() {
   return (
@@ -11,13 +12,13 @@ export default function Home() {
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-primary text-white">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
-          {/* Architectural structural background */}
+          {/* Profile Picture as background element */}
           <img 
-            src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2000&auto=format&fit=crop" 
-            alt="Modern Architecture" 
-            className="w-full h-full object-cover opacity-30"
+            src={profilePic} 
+            alt="NAV Architectural BIM Services" 
+            className="w-full h-full object-cover opacity-20"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/95 to-primary/60" />
         </div>
 
         <div className="container-padding relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
