@@ -37,7 +37,7 @@ export default function Home() {
               Consultancy
             </h1>
             <p className="text-lg text-gray-300 max-w-lg leading-relaxed">
-              NAV specializes in delivering clean, coordinated, and submission-ready BIM models aligned with ISO 19650 workflows and project governance standards.
+              NAV specializes in delivering clean, coordinated, and submission-ready BIM models aligned with ISO 19650 information management and project governance standards.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <Link href="/contact">

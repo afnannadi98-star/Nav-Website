@@ -13,14 +13,14 @@ export default function Services() {
     },
     {
       title: "IFC Coordination",
-      description: "Specialized IFC-based coordination workflows aligned with ISO 19650. We manage vendor-neutral data exchange to ensure seamless integration across diverse software platforms.",
-      features: ["OpenBIM Workflows", "IFC Schema Validation", "Data Exchange Management", "ISO 19650 Alignment"],
+      description: "Specialized IFC-based coordination workflows aligned with ISO 19650-2. We manage vendor-neutral data exchange (OpenBIM) to ensure seamless integration across the project lifecycle.",
+      features: ["OpenBIM Workflows", "IFC Schema Validation", "Information Exchange Management", "ISO 19650-2 Compliance"],
       image: "https://images.unsplash.com/photo-1581094794329-cd1361ddee21?w=800&q=80"
     },
     {
       title: "Model Development (LOD 200-400)",
-      description: "Revit-based architectural modeling from SD to IFC. We align with design intent and BEP requirements, utilizing parametric families and Dynamo automation.",
-      features: ["SD / DD / IFC Modeling", "LOD 200–400 Standards", "Parametric RFA Families", "Workset & File Strategy"],
+      description: "Revit-based architectural modeling from SD to IFC. We align with design intent, EIR, and BEP requirements, utilizing parametric families and Dynamo automation.",
+      features: ["SD / DD / IFC Modeling", "EIR & BEP Alignment", "Parametric RFA Families", "Information Container Management"],
       image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&q=80"
     },
     {

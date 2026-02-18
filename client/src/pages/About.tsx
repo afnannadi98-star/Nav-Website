@@ -51,10 +51,10 @@ export default function About() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {[
-                { icon: Zap, title: "BIM Governance", desc: "Structured methodology for predictable delivery." },
-                { icon: Target, title: "Model Health", desc: "QA/QC control and clash management." },
-                { icon: Users, title: "ISO 19650", desc: "Aligned with international information standards." },
-                { icon: CheckCircle2, title: "Risk Reduction", desc: "Disciplined documentation workflows." }
+                { icon: Zap, title: "BIM Governance", desc: "Structured methodology for information delivery." },
+                { icon: Target, title: "CDE Management", desc: "Common Data Environment control and coordination." },
+                { icon: Users, title: "ISO 19650", desc: "International standards for information management." },
+                { icon: CheckCircle2, title: "QA/QC Control", desc: "Disciplined verification and validation workflows." }
               ].map((val, i) => (
                 <div key={i} className="flex gap-4">
                   <val.icon className="w-8 h-8 text-accent shrink-0" />
