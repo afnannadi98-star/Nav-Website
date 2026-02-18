@@ -9,6 +9,15 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project, index }: ProjectCardProps) {
+  const getImageUrl = (url: string) => {
+    if (url.startsWith('/assets/')) {
+      // In a real Vite app, you'd import these, 
+      // but for this dynamic case we'll try to map it or use a public path
+      return url;
+    }
+    return url || "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80";
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -18,9 +27,8 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
       className="group relative overflow-hidden bg-gray-100 dark:bg-gray-800"
     >
       <div className="aspect-[4/3] overflow-hidden">
-        {/* Placeholder image logic - in production use real URLs */}
         <img
-          src={project.imageUrl || "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80"} 
+          src={getImageUrl(project.imageUrl)} 
           alt={project.title}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
