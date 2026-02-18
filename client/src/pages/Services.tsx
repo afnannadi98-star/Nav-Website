@@ -3,13 +3,13 @@ import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
-// Import images
-import onboardingImg from "@assets/image_1771444864888.png";
-import modelDevImg from "@assets/image_1771444885331.png";
-import coordinationImg from "@assets/image_1771444898164.png";
-import automationImg from "@assets/image_1771444911755.png";
-import qaImg from "@assets/image_1771444925786.png";
-import submissionImg from "@assets/image_1771444940654.png";
+// Import real stock images
+import onboardingImg from "@/assets/images/onboarding.jpg";
+import modelDevImg from "@/assets/images/model-dev.jpg";
+import coordinationImg from "@/assets/images/coordination.jpg";
+import automationImg from "@/assets/images/automation.jpg";
+import qaImg from "@/assets/images/qa-qc.jpg";
+import submissionImg from "@/assets/images/submission.jpg";
 
 export default function Services() {
   const services = [
