@@ -60,6 +60,15 @@ async function seedDatabase() {
         completionDate: "2024"
       },
       {
+        title: "Confidential Residential Development",
+        description: "Large-scale residential development in Dubai. Specialist BIM delivery for initial design stages.",
+        imageUrl: "/assets/images/confidential-dubai.png",
+        category: "Residential",
+        scope: "SD & DD Authority Submission",
+        location: "Dubai, UAE",
+        completionDate: "2024"
+      },
+      {
         title: "Confidential Development",
         description: "Large-scale residential and non-residential development in Saudi Arabia. Specialist BIM delivery for initial design stages.",
         imageUrl: "/assets/images/confidential-saudi.png",
