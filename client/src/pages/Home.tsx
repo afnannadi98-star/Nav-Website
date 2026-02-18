@@ -10,15 +10,9 @@ export default function Home() {
       
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-primary text-white">
-        {/* Background Image with Overlay */}
+        {/* Background Overlay */}
         <div className="absolute inset-0 z-0">
-          {/* Profile Picture as background element */}
-          <img 
-            src={profilePic} 
-            alt="NAV Architectural BIM Services" 
-            className="w-full h-full object-cover opacity-20"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/95 to-primary/60" />
+          <div className="absolute inset-0 bg-primary" />
         </div>
 
         <div className="container-padding relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -33,7 +27,7 @@ export default function Home() {
             </div>
             <h1 className="font-heading font-bold text-5xl md:text-7xl leading-[1.1] uppercase">
               Advanced <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">Architectural BIM</span> <br />
+              <span className="text-white font-extrabold">Architectural BIM</span> <br />
               Consultancy
             </h1>
             <p className="text-lg text-gray-300 max-w-lg leading-relaxed">

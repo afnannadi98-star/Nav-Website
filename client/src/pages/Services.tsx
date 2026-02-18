@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
 // Import images
-import onboardingImg from "@/assets/images/architecture-onboarding.jpg";
 import modelDevImg from "@assets/image_1771447927234.png";
 import coordinationImg from "@assets/Screenshot_2026-02-12_235025_1771446111162.png";
 import automationImg from "@assets/image_1771448263719.png";
@@ -22,7 +21,7 @@ export default function Services() {
         "Model structure, levels & grids setup",
         "Naming conventions & frameworks"
       ],
-      image: onboardingImg
+      image: null
     },
     {
       title: "Model Development (LOD 200-500)",
@@ -99,14 +98,22 @@ export default function Services() {
           >
             {/* Image Side */}
             <div className="w-full lg:w-1/2 relative group">
-              <div className="absolute inset-0 bg-accent translate-x-4 translate-y-4 rounded-none -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300" />
-              <div className="aspect-video overflow-hidden border border-border">
-                <img 
-                  src={service.image} 
-                  alt={service.title} 
-                  className="w-full h-full object-contain filter saturate-0 group-hover:saturate-100 transition-all duration-500 bg-white"
-                />
-              </div>
+              {service.image ? (
+                <>
+                  <div className="absolute inset-0 bg-accent translate-x-4 translate-y-4 rounded-none -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300" />
+                  <div className="aspect-video overflow-hidden border border-border">
+                    <img 
+                      src={service.image} 
+                      alt={service.title} 
+                      className="w-full h-full object-contain filter saturate-0 group-hover:saturate-100 transition-all duration-500 bg-white"
+                    />
+                  </div>
+                </>
+              ) : (
+                <div className="aspect-video border border-border bg-muted flex items-center justify-center">
+                  <span className="text-muted-foreground font-heading uppercase tracking-widest">Service Details</span>
+                </div>
+              )}
             </div>
 
             {/* Content Side */}
