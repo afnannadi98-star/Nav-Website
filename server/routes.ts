@@ -60,6 +60,15 @@ async function seedDatabase() {
         completionDate: "2024"
       },
       {
+        title: "Confidential Development",
+        description: "Large-scale residential and non-residential development in Saudi Arabia. Specialist BIM delivery for initial design stages.",
+        imageUrl: "/assets/images/confidential-saudi.png",
+        category: "Mixed-Use",
+        scope: "SD & DD Authority Submission",
+        location: "Saudi Arabia",
+        completionDate: "2024"
+      },
+      {
         title: "Shura Island",
         description: "Luxury resort development featuring organic architectural forms. Comprehensive BIM support for as-built documentation and IFC packages.",
         imageUrl: "/assets/images/shura-island.jpeg",
