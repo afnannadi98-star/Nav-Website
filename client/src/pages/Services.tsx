@@ -6,26 +6,38 @@ import { Link } from "wouter";
 export default function Services() {
   const services = [
     {
-      title: "BIM Coordination & IFC",
-      description: "Weekly or milestone-based federation with structured clash detection and IFC coordination. We establish a Clash Matrix defining discipline combinations, responsibilities, and tolerance thresholds.",
-      features: ["Navisworks Federation", "IFC Coordination", "Priority Categorization", "Issue Tracking & Resolution"],
+      title: "BIM Coordination",
+      description: "Weekly or milestone-based federation with structured clash detection. We establish a Clash Matrix defining discipline combinations, responsibilities, and tolerance thresholds.",
+      features: ["Navisworks Federation", "Clash Matrix Definition", "Priority Categorization", "Issue Tracking & Resolution"],
       image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80"
     },
     {
-      title: "Model Development (LOD 200-500)",
-      description: "Revit-based architectural modeling from SD to As-Built (LOD 500). We align with design intent and BEP requirements, utilizing parametric families and Dynamo automation.",
-      features: ["SD / DD / IFC / Shop Drawings", "LOD 500 As-Built Modeling", "Parametric RFA Families", "Workset & File Strategy"],
+      title: "IFC Coordination",
+      description: "Specialized IFC-based coordination workflows aligned with ISO 19650. We manage vendor-neutral data exchange to ensure seamless integration across diverse software platforms.",
+      features: ["OpenBIM Workflows", "IFC Schema Validation", "Data Exchange Management", "ISO 19650 Alignment"],
+      image: "https://images.unsplash.com/photo-1581094794329-cd1361ddee21?w=800&q=80"
+    },
+    {
+      title: "Model Development (LOD 200-400)",
+      description: "Revit-based architectural modeling from SD to IFC. We align with design intent and BEP requirements, utilizing parametric families and Dynamo automation.",
+      features: ["SD / DD / IFC Modeling", "LOD 200–400 Standards", "Parametric RFA Families", "Workset & File Strategy"],
       image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&q=80"
     },
     {
-      title: "Automation & Model Health",
-      description: "Custom computational workflows including profile change detection, parameter validation, and integrity checks. We ensure validated, warning-controlled models for submission.",
-      features: ["Custom Dynamo Tools", "Model Health Optimization", "Parameter Validation", "Automated Batch Exports"],
-      image: "https://images.unsplash.com/photo-1581094794329-cd67bce35543?w=800&q=80"
+      title: "As-Built Modeling (LOD 500)",
+      description: "High-fidelity As-Built models strictly following LOD 500 standards. We provide audit-ready models reflecting final site conditions for facility management.",
+      features: ["LOD 500 Compliance", "Facility Management Data", "Final Model Audits", "As-Built Documentation"],
+      image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80"
     },
     {
-      title: "Documentation & Compliance",
-      description: "Authority-compliant layouts derived directly from live BIM data. Deliverables include plans, sections, and detailed packages aligned with ISO 19650 standards.",
+      title: "Automation & Model Health",
+      description: "Custom computational workflows including profile change detection, parameter validation, and integrity checks. We ensure validated, warning-controlled models.",
+      features: ["Custom Dynamo Tools", "Model Health Optimization", "Parameter Validation", "Automated Batch Exports"],
+      image: "https://images.unsplash.com/photo-1581094794329-cd1361ddee21?w=800&q=80"
+    },
+    {
+      title: "Documentation & Submission",
+      description: "Authority-compliant layouts derived directly from live BIM data. Deliverables include plans, sections, and detailed packages.",
       features: ["Shop Drawing Extraction", "Property Set Management", "Authority Submissions", "ISO 19650 Compliance"],
       image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80"
     }

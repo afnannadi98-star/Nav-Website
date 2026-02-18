@@ -99,9 +99,11 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { icon: Layers, title: "BIM Coordination & IFC", desc: "Weekly or milestone-based federation with structured IFC coordination and clash detection." },
-              { icon: Box, title: "3D Modeling & As-Built", desc: "High-fidelity models from LOD 200 to LOD 500 As-Built standards." },
-              { icon: FileText, title: "Documentation", desc: "Precision construction drawings and IFC packages generated directly from models." }
+              { icon: Layers, title: "BIM Coordination", desc: "Weekly or milestone-based federation with structured clash detection." },
+              { icon: FileText, title: "IFC Coordination", desc: "Specialized OpenBIM workflows aligned with ISO 19650 standards." },
+              { icon: Box, title: "3D Modeling", desc: "High-fidelity models from LOD 200 to LOD 400 standards." },
+              { icon: Scan, title: "As-Built Modeling", desc: "LOD 500 As-Built models reflecting final site conditions." },
+              { icon: FileText, title: "Documentation", desc: "Authority-compliant layouts derived directly from live BIM data." }
             ].map((service, i) => (
               <motion.div 
                 key={i}
