@@ -52,7 +52,7 @@ export default function Contact() {
             <div className="space-y-8">
               {[
                 { icon: MapPin, title: "Headquarters", content: "Amman, Jordan" },
-                { icon: Mail, title: "Email", content: "info@navbim.com" },
+                { icon: Mail, title: "Email", content: "info@nav.com" },
                 { icon: Clock, title: "Business Hours", content: "Sun - Thu: 9:00 AM - 6:00 PM" }
               ].map((item, i) => (
                 <div key={i} className="flex gap-4">
