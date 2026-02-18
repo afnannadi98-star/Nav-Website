@@ -6,15 +6,15 @@ import { Link } from "wouter";
 export default function Services() {
   const services = [
     {
-      title: "BIM Coordination & Federation",
-      description: "Weekly or milestone-based federation with structured clash detection. We establish a Clash Matrix defining discipline combinations, responsibilities, and tolerance thresholds.",
-      features: ["Navisworks Federation", "Clash Matrix Definition", "Priority Categorization", "Issue Tracking & Resolution"],
+      title: "BIM Coordination & IFC",
+      description: "Weekly or milestone-based federation with structured clash detection and IFC coordination. We establish a Clash Matrix defining discipline combinations, responsibilities, and tolerance thresholds.",
+      features: ["Navisworks Federation", "IFC Coordination", "Priority Categorization", "Issue Tracking & Resolution"],
       image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80"
     },
     {
       title: "Model Development (LOD 200-500)",
-      description: "Revit-based architectural modeling from SD to As-Built. We align with design intent and BEP requirements, utilizing parametric families and Dynamo automation.",
-      features: ["SD / DD / IFC / Shop Drawings", "LOD 200–500 Standards", "Parametric RFA Families", "Workset & File Strategy"],
+      description: "Revit-based architectural modeling from SD to As-Built (LOD 500). We align with design intent and BEP requirements, utilizing parametric families and Dynamo automation.",
+      features: ["SD / DD / IFC / Shop Drawings", "LOD 500 As-Built Modeling", "Parametric RFA Families", "Workset & File Strategy"],
       image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&q=80"
     },
     {
