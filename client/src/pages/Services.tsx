@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
 // Import images
-import onboardingImg from "@/assets/images/bim-onboarding-final.jpg";
+import onboardingImg from "@/assets/images/bim-onboarding-new.jpg";
 import modelDevImg from "@assets/image_1771447927234.png";
 import coordinationImg from "@assets/Screenshot_2026-02-12_235025_1771446111162.png";
 import automationImg from "@assets/image_1771448263719.png";
