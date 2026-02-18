@@ -3,10 +3,10 @@ import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
-// Import real stock images
+// Import images
 import onboardingImg from "@/assets/images/onboarding.jpg";
 import modelDevImg from "@/assets/images/model-dev.jpg";
-import coordinationImg from "@/assets/images/coordination.jpg";
+import coordinationImg from "@assets/Screenshot_2026-02-12_235025_1771446111162.png";
 import automationImg from "@/assets/images/automation.jpg";
 import qaImg from "@/assets/images/qa-qc.jpg";
 import submissionImg from "@/assets/images/submission.jpg";
@@ -104,7 +104,7 @@ export default function Services() {
                 <img 
                   src={service.image} 
                   alt={service.title} 
-                  className="w-full h-full object-cover filter saturate-0 group-hover:saturate-100 transition-all duration-500"
+                  className="w-full h-full object-contain filter saturate-0 group-hover:saturate-100 transition-all duration-500 bg-white"
                 />
               </div>
             </div>
