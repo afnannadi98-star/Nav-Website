@@ -97,11 +97,10 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { icon: Layers, title: "BIM Coordination", desc: "Clash detection and resolution before construction begins." },
-              { icon: Box, title: "3D Modeling", desc: "High-fidelity models from LOD 100 to LOD 500 standards." },
-              { icon: Scan, title: "Scan to BIM", desc: "Converting point cloud data into accurate Revit models." },
+              { icon: Layers, title: "BIM Coordination", desc: "Weekly or milestone-based federation with structured clash detection." },
+              { icon: Box, title: "3D Modeling", desc: "High-fidelity models from LOD 200 to LOD 500 standards." },
               { icon: FileText, title: "Documentation", desc: "Precision construction drawings generated directly from models." }
             ].map((service, i) => (
               <motion.div 
