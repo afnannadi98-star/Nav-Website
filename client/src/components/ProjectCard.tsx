@@ -2,6 +2,7 @@ import { type Project } from "@shared/schema";
 import { ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
+import confidentialImg from "@assets/CONFEDENTIAL_1771510644647.jpg";
 
 interface ProjectCardProps {
   project: Project;
@@ -9,13 +10,14 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project, index }: ProjectCardProps) {
-  const getImageUrl = (url: string) => {
+  const getImageUrl = (url: string | null | undefined) => {
+    if (!url || url.toLowerCase().includes('confidential')) {
+      return confidentialImg;
+    }
     if (url.startsWith('/assets/')) {
-      // In a real Vite app, you'd import these, 
-      // but for this dynamic case we'll try to map it or use a public path
       return url;
     }
-    return url || "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80";
+    return url;
   };
 
   return (
