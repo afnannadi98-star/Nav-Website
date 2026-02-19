@@ -53,37 +53,6 @@ export default function Home() {
               </Link>
             </div>
           </motion.div>
-
-          {/* Decorative Technical Element */}
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden lg:flex justify-end"
-          >
-            <div className="relative w-[500px] h-[400px] border border-white/10 bg-white/5 backdrop-blur-sm p-8 flex flex-col justify-between">
-              <div className="absolute -top-4 -right-4 w-24 h-24 border-t-4 border-r-4 border-accent" />
-              <div className="absolute -bottom-4 -left-4 w-24 h-24 border-b-4 border-l-4 border-accent" />
-              
-              <div className="flex justify-between items-start">
-                <div className="space-y-2">
-                  <div className="h-1 w-12 bg-white/20" />
-                  <div className="h-1 w-8 bg-white/20" />
-                </div>
-                <Box className="w-12 h-12 text-white/20" />
-              </div>
-              
-              <div className="space-y-4">
-                <div className="text-6xl font-heading font-bold text-white/10">LOD 500</div>
-                <div className="h-px w-full bg-white/10" />
-                <div className="flex justify-between text-xs text-white/40 font-mono uppercase">
-                  <span>Coordination</span>
-                  <span>Fabrication</span>
-                  <span>Analysis</span>
-                </div>
-              </div>
-            </div>
-          </motion.div>
         </div>
       </section>
 
