@@ -53,7 +53,7 @@ async function seedDatabase() {
       {
         title: "King Abdulaziz International Airport (KAIA)",
         description: "Expansion of the international terminal involving complex geometric structures and high-traffic infrastructure coordination. Specialist BIM support for large-scale aviation development.",
-        imageUrl: "/assets/images/portfolio-kaia.jpeg",
+        imageUrl: "/assets/images/portfolio-kaia-new.jpg",
         category: "Infrastructure",
         scope: "Shop Drawings & IFC Package",
         location: "Jeddah, Saudi Arabia",
