@@ -10,7 +10,7 @@ export default function Footer() {
           
           {/* Brand */}
           <div className="space-y-4 flex flex-col items-center md:items-start">
-            <Logo />
+            <Logo textColor="text-white" />
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
               Specialized Architectural BIM consultancy delivering clean, coordinated, and submission-ready models for large-scale developments.
             </p>

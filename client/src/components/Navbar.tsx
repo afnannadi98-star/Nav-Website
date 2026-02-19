@@ -37,7 +37,7 @@ export default function Navbar() {
       <div className="container-padding flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center group">
-          <Logo />
+          <Logo textColor={scrolled ? "text-primary" : "text-white"} />
         </Link>
 
         {/* Desktop Nav */}
