@@ -99,7 +99,7 @@ export default function Services() {
           >
             {/* Image Side */}
             <div className="w-full lg:w-1/2 relative group">
-              {service.image ? (
+              {service.image && (
                 <>
                   <div className="absolute inset-0 bg-accent translate-x-4 translate-y-4 rounded-none -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300" />
                   <div className="aspect-video overflow-hidden border border-border">
@@ -110,10 +110,6 @@ export default function Services() {
                     />
                   </div>
                 </>
-              ) : (
-                <div className="aspect-video border border-border bg-muted flex items-center justify-center">
-                  <span className="text-muted-foreground font-heading uppercase tracking-widest">Service Details</span>
-                </div>
               )}
             </div>
 
