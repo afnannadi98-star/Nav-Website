@@ -1,23 +1,18 @@
+import Logo from "./Logo";
+import { Mail, MapPin } from "lucide-react";
 import { Link } from "wouter";
-import { Box, Mail, MapPin, Phone, Linkedin, Twitter, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground border-t border-white/10">
       <div className="container-padding py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
           
           {/* Brand */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <Box className="w-8 h-8 text-accent" strokeWidth={2} />
-              <span className="font-heading font-bold text-3xl tracking-tighter text-white">
-                NAV
-              </span>
-            </div>
+          <div className="space-y-4 flex flex-col items-center md:items-start">
+            <Logo />
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
-              Precision in modeling. Excellence in execution. 
-              Delivering world-class BIM solutions for the modern built environment.
+              Specialized Architectural BIM consultancy delivering clean, coordinated, and submission-ready models for large-scale developments.
             </p>
           </div>
 
@@ -48,10 +43,10 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div>
+          <div className="flex flex-col items-center md:items-start">
             <h3 className="text-white font-heading font-bold text-lg mb-6">Contact</h3>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3 text-gray-400 text-sm">
+              <li className="flex items-center md:items-start gap-3 text-gray-400 text-sm">
                 <MapPin className="w-5 h-5 text-accent shrink-0" />
                 <span>Amman, Jordan</span>
               </li>
@@ -63,15 +58,10 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-white/10 mt-16 pt-8 text-center">
           <p className="text-gray-500 text-xs">
             © {new Date().getFullYear()} NAV. All rights reserved.
           </p>
-          <div className="flex items-center gap-4">
-            <a href="#" className="text-gray-400 hover:text-white transition-colors"><Linkedin className="w-5 h-5" /></a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors"><Twitter className="w-5 h-5" /></a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors"><Instagram className="w-5 h-5" /></a>
-          </div>
         </div>
       </div>
     </footer>

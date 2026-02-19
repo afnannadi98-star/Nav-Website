@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Layers, Box, Zap, FileText, Target, ShieldCheck } from "lucide-react";
+import { ArrowRight, Layers, Zap, FileText, Target, ShieldCheck } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 // Import assets
 import heroCube from "@/assets/images/hero-cube.jpg";
-import logoImg from "@assets/SOLID_GLASS_CUBE_2_1771449977187.jpg";
 
 export default function Home() {
   return (
@@ -70,7 +69,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               { icon: Layers, title: "BIM Coordination", desc: "Weekly matrix-driven federation and clash management in Navisworks." },
-              { icon: Box, title: "Model Development", desc: "Progressive Revit-based modeling from LOD 200 to LOD 500 standards." },
+              { icon: Layers, title: "Model Development", desc: "Progressive Revit-based modeling from LOD 200 to LOD 500 standards." },
               { icon: Zap, title: "BIM Automation", desc: "Custom Dynamo scripts and automated workflows to reduce manual modeling overhead." },
               { icon: Target, title: "QA/QC Checks", desc: "Continuous model health monitoring and compliance validation." },
               { icon: FileText, title: "Documentation", desc: "Coordinated, authority-ready drawings derived from live BIM data." },
@@ -82,10 +81,10 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="group p-8 border border-border hover:border-accent/50 bg-white hover:shadow-lg hover:shadow-accent/5 transition-all duration-300"
+                className="group p-8 border border-border hover:border-accent/50 bg-white transition-all duration-300"
               >
                 <div className="w-12 h-12 bg-primary/5 text-primary group-hover:bg-accent group-hover:text-white flex items-center justify-center mb-6 transition-colors duration-300">
-                  <service.icon className="w-6 h-6" />
+                  <service.icon className="w-6 h-6" strokeWidth={1} />
                 </div>
                 <h3 className="font-heading font-bold text-xl mb-3 group-hover:text-accent transition-colors">{service.title}</h3>
                 <p className="text-secondary text-sm leading-relaxed mb-4">{service.desc}</p>
