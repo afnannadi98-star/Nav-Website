@@ -8,7 +8,7 @@ export default function About() {
     <div className="pt-24 pb-16">
       
       {/* Header */}
-      <div className="bg-secondary/10 py-20 mb-16">
+      <div className="bg-primary py-20 mb-16">
         <div className="container-padding">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -16,8 +16,8 @@ export default function About() {
             className="max-w-3xl"
           >
             <span className="text-accent font-bold tracking-widest text-xs uppercase mb-4 block">About NAV</span>
-            <h1 className="font-heading text-5xl font-bold text-primary mb-6">Clean, Coordinated, <br/> & Submission-Ready.</h1>
-            <p className="text-xl text-secondary leading-relaxed">
+            <h1 className="font-heading text-5xl font-bold text-white mb-6">Clean, Coordinated, <br/> & Submission-Ready.</h1>
+            <p className="text-xl text-gray-300 leading-relaxed">
               NAV specializes in delivering high-quality BIM outputs for medium- to large-scale developments, supporting design consultants, developers, and contractors in translating complex architectural designs into structured models.
             </p>
           </motion.div>
