@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
 // Import images
+import projectSetupImg from "@assets/unnamed_(1)_1771505267597.jpg";
 import modelDevImg from "@assets/image_1771447927234.png";
 import coordinationImg from "@assets/Screenshot_2026-02-12_235025_1771446111162.png";
 import automationImg from "@assets/image_1771448263719.png";
@@ -21,7 +22,7 @@ export default function Services() {
         "Model structure, levels & grids setup",
         "Naming conventions & frameworks"
       ],
-      image: null
+      image: projectSetupImg
     },
     {
       title: "Model Development (LOD 200-500)",
