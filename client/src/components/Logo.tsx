@@ -4,7 +4,7 @@ const Logo = ({ className = "", textColor = "text-primary" }: { className?: stri
   return (
     <div className={`flex items-center gap-3 ${className}`}>
       <img src={logoImg} alt="NAV Logo" className="h-10 w-10 object-contain block" />
-      <span className={`font-heading font-bold text-3xl tracking-tighter ${textColor} leading-[1.2] translate-y-[1px]`}>NAV</span>
+      <span className={`font-heading font-bold text-3xl tracking-tighter ${textColor} leading-none translate-y-[1px]`}>NAV</span>
     </div>
   );
 };

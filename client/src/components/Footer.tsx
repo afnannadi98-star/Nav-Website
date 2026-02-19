@@ -9,20 +9,20 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
           
           {/* Brand */}
-          <div className="space-y-4 flex flex-col items-center md:items-start">
+          <div className="space-y-6 flex flex-col items-center md:items-start">
             <Logo textColor="text-white" />
-            <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
+            <p className="text-gray-400 text-base leading-relaxed max-w-sm font-normal">
               Specialized Architectural BIM consultancy delivering clean, coordinated, and submission-ready models for large-scale developments.
             </p>
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h3 className="text-white font-heading font-bold text-lg mb-6">Explore</h3>
-            <ul className="space-y-3">
+          <div className="flex flex-col items-center md:items-start">
+            <h3 className="text-white font-heading font-bold text-lg mb-6 uppercase tracking-wider">Explore</h3>
+            <ul className="space-y-4">
               {['Home', 'About', 'Services', 'Portfolio', 'Contact'].map((item) => (
                 <li key={item}>
-                  <Link href={item === 'Home' ? '/' : `/${item.toLowerCase()}`} className="text-gray-400 hover:text-accent transition-colors text-sm">
+                  <Link href={item === 'Home' ? '/' : `/${item.toLowerCase()}`} className="text-gray-400 hover:text-accent transition-colors text-base font-normal">
                     {item}
                   </Link>
                 </li>
@@ -31,11 +31,11 @@ export default function Footer() {
           </div>
 
           {/* Services */}
-          <div>
-            <h3 className="text-white font-heading font-bold text-lg mb-6">Services</h3>
-            <ul className="space-y-3">
+          <div className="flex flex-col items-center md:items-start">
+            <h3 className="text-white font-heading font-bold text-lg mb-6 uppercase tracking-wider">Services</h3>
+            <ul className="space-y-4">
               {['BIM Coordination', '3D Modeling', 'Clash Detection'].map((item) => (
-                <li key={item} className="text-gray-400 text-sm">
+                <li key={item} className="text-gray-400 text-base font-normal">
                   {item}
                 </li>
               ))}
@@ -44,13 +44,13 @@ export default function Footer() {
 
           {/* Contact */}
           <div className="flex flex-col items-center md:items-start">
-            <h3 className="text-white font-heading font-bold text-lg mb-6">Contact</h3>
+            <h3 className="text-white font-heading font-bold text-lg mb-6 uppercase tracking-wider">Contact</h3>
             <ul className="space-y-4">
-              <li className="flex items-center md:items-start gap-3 text-gray-400 text-sm">
+              <li className="flex items-center md:items-start gap-3 text-gray-400 text-base font-normal">
                 <MapPin className="w-5 h-5 text-accent shrink-0" />
                 <span>Amman, Jordan</span>
               </li>
-              <li className="flex items-center gap-3 text-gray-400 text-sm">
+              <li className="flex items-center gap-3 text-gray-400 text-base font-normal">
                 <Mail className="w-5 h-5 text-accent shrink-0" />
                 <span>info@navbim.com</span>
               </li>
