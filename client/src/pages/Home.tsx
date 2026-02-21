@@ -12,13 +12,13 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-primary text-white">
         {/* Background Image with Overlay */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 bg-[#0B1221]">
           <img 
             src={heroCube} 
             alt="NAV Architectural BIM Services" 
-            className="w-full h-full object-cover opacity-40"
+            className="w-1/2 h-full object-cover opacity-40 float-left"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0B1221] via-[#0B1221]/70 to-transparent" />
         </div>
 
         <div className="container-padding relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
