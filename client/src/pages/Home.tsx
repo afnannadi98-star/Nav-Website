@@ -21,12 +21,12 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-transparent" />
         </div>
 
-        <div className="container-padding relative z-10 flex items-center">
+        <div className="container-padding relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div 
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="space-y-6 max-w-2xl"
+            className="space-y-6"
           >
             <div className="inline-block bg-accent/10 border border-accent/20 px-4 py-1.5 rounded-none">
               <span className="text-accent font-bold tracking-widest text-xs uppercase">Precision Engineering</span>

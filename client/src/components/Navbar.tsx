@@ -45,12 +45,16 @@ export default function Navbar() {
           {navLinks.map((link) => (
             <Link key={link.name} href={link.href} className={cn(
               "nav-link",
-              scrolled ? "text-foreground/80" : "text-white/80",
-              location === link.href && "text-accent"
+              location === link.href ? "text-accent" : "text-foreground/80"
             )}>
               {link.name}
             </Link>
           ))}
+          <Link href="/contact">
+            <Button size="sm" className="bg-accent hover:bg-accent/90 text-white font-bold tracking-wider rounded-none uppercase text-xs px-6">
+              Get Quote
+            </Button>
+          </Link>
         </nav>
 
         {/* Mobile Nav */}
@@ -76,6 +80,11 @@ export default function Navbar() {
                     {link.name}
                   </Link>
                 ))}
+                <Link href="/contact" onClick={() => setIsOpen(false)}>
+                  <Button className="w-full bg-accent hover:bg-accent/90 text-white font-bold uppercase rounded-none">
+                    Get Quote
+                  </Button>
+                </Link>
               </div>
             </SheetContent>
           </Sheet>
