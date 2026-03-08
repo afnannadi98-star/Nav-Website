@@ -6,7 +6,8 @@ const Logo = ({ className = "", textColor = "text-primary", whiteLogo = false }:
       <img 
         src={logoImg} 
         alt="NAV Logo" 
-        className={`h-8 w-auto object-contain block ${whiteLogo ? 'invert' : ''}`}
+        className="h-8 w-auto object-contain block"
+        style={whiteLogo ? { filter: 'invert(1) brightness(1.1)' } : undefined}
       />
     </div>
   );
