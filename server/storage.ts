@@ -12,6 +12,8 @@ import { eq } from "drizzle-orm";
 export interface IStorage {
   // Inquiries
   createInquiry(inquiry: InsertInquiry): Promise<Inquiry>;
+  getInquiries(): Promise<Inquiry[]>;
+  deleteInquiry(id: number): Promise<boolean>;
   
   // Projects
   getProjects(): Promise<Project[]>;
@@ -24,6 +26,15 @@ export class DatabaseStorage implements IStorage {
   async createInquiry(insertInquiry: InsertInquiry): Promise<Inquiry> {
     const [inquiry] = await db.insert(inquiries).values(insertInquiry).returning();
     return inquiry;
+  }
+
+  async getInquiries(): Promise<Inquiry[]> {
+    return await db.select().from(inquiries).orderBy(inquiries.createdAt);
+  }
+
+  async deleteInquiry(id: number): Promise<boolean> {
+    const result = await db.delete(inquiries).where(eq(inquiries.id, id)).returning();
+    return result.length > 0;
   }
 
   // Projects

@@ -31,6 +31,21 @@ export const api = {
         400: errorSchemas.validation,
       },
     },
+    list: {
+      method: 'GET' as const,
+      path: '/api/inquiries' as const,
+      responses: {
+        200: z.array(z.custom<typeof inquiries.$inferSelect>()),
+      },
+    },
+    delete: {
+      method: 'DELETE' as const,
+      path: '/api/inquiries/:id' as const,
+      responses: {
+        200: z.object({ success: z.boolean() }),
+        404: errorSchemas.notFound,
+      },
+    },
   },
   projects: {
     list: {

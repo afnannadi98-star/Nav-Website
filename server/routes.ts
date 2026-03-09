@@ -26,6 +26,19 @@ export async function registerRoutes(
     }
   });
 
+  app.get(api.inquiries.list.path, async (req, res) => {
+    const allInquiries = await storage.getInquiries();
+    res.json(allInquiries);
+  });
+
+  app.delete('/api/inquiries/:id', async (req, res) => {
+    const deleted = await storage.deleteInquiry(Number(req.params.id));
+    if (!deleted) {
+      return res.status(404).json({ message: 'Inquiry not found' });
+    }
+    res.json({ success: true });
+  });
+
   // === Projects ===
   app.get(api.projects.list.path, async (req, res) => {
     const projects = await storage.getProjects();
