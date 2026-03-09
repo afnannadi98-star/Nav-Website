@@ -26,12 +26,33 @@ export async function registerRoutes(
     }
   });
 
-  app.get(api.inquiries.list.path, async (req, res) => {
+  const requireAdminAuth = (req: any, res: any, next: any) => {
+    const authHeader = req.headers.authorization;
+    if (!authHeader || !authHeader.startsWith('Bearer ')) {
+      return res.status(401).json({ message: 'Unauthorized' });
+    }
+    const password = authHeader.slice(7);
+    if (password !== process.env.ADMIN_PASSWORD) {
+      return res.status(401).json({ message: 'Invalid password' });
+    }
+    next();
+  };
+
+  app.post('/api/admin/login', (req, res) => {
+    const { password } = req.body;
+    if (password === process.env.ADMIN_PASSWORD) {
+      res.json({ success: true });
+    } else {
+      res.status(401).json({ message: 'Invalid password' });
+    }
+  });
+
+  app.get(api.inquiries.list.path, requireAdminAuth, async (req, res) => {
     const allInquiries = await storage.getInquiries();
     res.json(allInquiries);
   });
 
-  app.delete('/api/inquiries/:id', async (req, res) => {
+  app.delete('/api/inquiries/:id', requireAdminAuth, async (req, res) => {
     const deleted = await storage.deleteInquiry(Number(req.params.id));
     if (!deleted) {
       return res.status(404).json({ message: 'Inquiry not found' });
