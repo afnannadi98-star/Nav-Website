@@ -9,7 +9,7 @@ export default async function handler(req, res) {
 
       await resend.emails.send({
         from: "NAV Website <onboarding@resend.dev>",
-        to: ["info@navbim.com"], // <-- your email here
+        to: ["info@navbim.com"],
         subject: subject || "New Contact Form Submission",
         html: `
           <h2>New Inquiry</h2>
