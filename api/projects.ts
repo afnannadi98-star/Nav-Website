@@ -1,24 +1,45 @@
 export default function handler(req, res) {
   res.status(200).json([
     {
-      title: "SHURA ISLAND",
-      category: "HOSPITALITY",
-      image: "/attached_assets/IMG_0980_1771458086554.jpeg"
+      id: 12,
+      title: "Shura Island",
+      description: "Luxury resort development featuring organic architectural forms. Comprehensive BIM support for as-built documentation and IFC packages.",
+      imageUrl: "/assets/images/shura-island.jpeg",
+      category: "Hospitality",
+      scope: "As-Built Drawings & IFC Package",
+      location: "Red Sea, Saudi Arabia",
+      completionDate: "2024"
     },
     {
-      title: "KING ABDULAZIZ INTERNATIONAL AIRPORT (KAIA)",
-      category: "INFRASTRUCTURE",
-      image: "/attached_assets/Jeddah_New_Terminal_1_10_1771488413740.jpg"
+      id: 8,
+      title: "King Abdulaziz International Airport (KAIA)",
+      description: "Expansion of the international terminal involving complex geometric structures and high-traffic infrastructure coordination. Specialist BIM support for large-scale aviation development.",
+      imageUrl: "/assets/images/portfolio-kaia-new.jpg",
+      category: "Infrastructure",
+      scope: "Shop Drawings & IFC Package",
+      location: "Jeddah, Saudi Arabia",
+      completionDate: "2024"
     },
     {
-      title: "CONFIDENTIAL DEVELOPMENT",
-      category: "MIXED-USE",
-      image: "/attached_assets/CONFEDENTIAL_copy_1772811066762.jpg"
+      id: 13,
+      title: "Confidential Development",
+      description: "Large-scale residential and non-residential development in Saudi Arabia. Specialist BIM delivery for initial design stages.",
+      imageUrl: "/attached_assets/NAV_logo.png",
+      category: "Mixed-Use",
+      scope: "SD & DD Authority Submission",
+      location: "Saudi Arabia",
+      completionDate: "2024"
     },
     {
-      title: "CONFIDENTIAL RESIDENTIAL DEVELOPMENT",
-      category: "RESIDENTIAL",
-      image: "/attached_assets/CONFEDENTIAL_copy_1772811066762.jpg"
+      id: 14,
+      title: "Confidential Residential Development",
+      description: "Large-scale residential development in Dubai. Specialist BIM delivery for initial design stages.",
+      imageUrl: "/attached_assets/NAV_logo.png",
+      category: "Residential",
+      scope: "SD & DD Authority Submission",
+      location: "Dubai, UAE",
+      completionDate: "2024"
     }
   ]);
 }
+``
