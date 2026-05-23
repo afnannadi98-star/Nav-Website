@@ -10,12 +10,13 @@ export default async function handler(req, res) {
 
     const { name, email, subject, message } = req.body;
 
-    // ✅ Debug log
     console.log("Incoming form:", { name, email, subject, message });
 
+    // ✅ send email
     const result = await resend.emails.send({
-      from: "Test <onboarding@resend.dev>",
-      to: ["afnan.nadi98@gmail.com"], // MUST match your Resend account
+      from: "NAV BIM <info@navbim.com>",
+      to: ["info@navbim.com"],
+      reply_to: email,
       subject: subject || "New Contact Form Submission",
       html: `
         <h2>New Inquiry</h2>
@@ -30,16 +31,15 @@ export default async function handler(req, res) {
 
     return res.status(200).json({
       success: true,
-      result
+      result,
     });
 
   } catch (error) {
     console.error("FULL ERROR:", error);
 
-    // ✅ ALWAYS return JSON no matter what
     return res.status(500).json({
       success: false,
-      error: error?.message || String(error)
+      error: error?.message || String(error),
     });
   }
 }
