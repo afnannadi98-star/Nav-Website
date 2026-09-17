@@ -34,7 +34,7 @@ export default function Home() {
             <h1 className="font-heading font-bold text-5xl md:text-7xl leading-[1.1] uppercase">
               Advanced <br />
               <span className="text-white font-black drop-shadow-lg">Architectural BIM</span> <br />
-              Consultancy
+              Specialists
             </h1>
             <p className="text-lg text-gray-300 max-w-lg leading-relaxed">
               NAV specializes in delivering clean, coordinated, and submission-ready BIM models for medium- to large-scale developments.
